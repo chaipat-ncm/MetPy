@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>interpolate &mdash; MetPy 0.7</title>
+  <title>interpolate &mdash; MetPy 0.8</title>
   
 
   
@@ -43,7 +43,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MetPy 0.7" href="../../index.html"/>
+    <link rel="top" title="MetPy 0.8" href="../../index.html"/>
         <link rel="up" title="gridding" href="metpy.gridding.html"/>
         <link rel="next" title="inverse_distance" href="metpy.gridding.inverse_distance.html"/>
         <link rel="prev" title="gridding" href="metpy.gridding.html"/> 
@@ -81,7 +81,7 @@
                 
                   <div class="version-dropdown">
                     <select class="version-list" id="version-list">
-                      <option value=''>0.7</option>
+                      <option value=''>0.8</option>
                       
                         
                           <option value="../latest">latest</option>
@@ -234,25 +234,25 @@
 <li><strong>x</strong> (<em>array_like</em>) – x coordinate</li>
 <li><strong>y</strong> (<em>array_like</em>) – y coordinate</li>
 <li><strong>z</strong> (<em>array_like</em>) – observation value</li>
-<li><strong>interp_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – What type of interpolation to use. Available options include:
+<li><strong>interp_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – What type of interpolation to use. Available options include:
 1) “linear”, “nearest”, “cubic”, or “rbf” from Scipy.interpolate.
 2) “natural_neighbor”, “barnes”, or “cressman” from Metpy.mapping .
 Default “linear”.</li>
-<li><strong>hres</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)"><em>float</em></a>) – The horizontal resolution of the generated grid, given in the same units as the
+<li><strong>hres</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The horizontal resolution of the generated grid, given in the same units as the
 x and y parameters. Default 50000.</li>
-<li><strong>minimum_neighbors</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.6)"><em>int</em></a>) – Minimum number of neighbors needed to perform barnes or cressman interpolation for a
+<li><strong>minimum_neighbors</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Minimum number of neighbors needed to perform barnes or cressman interpolation for a
 point. Default is 3.</li>
-<li><strong>gamma</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)"><em>float</em></a>) – Adjustable smoothing parameter for the barnes interpolation. Default 0.25.</li>
-<li><strong>kappa_star</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)"><em>float</em></a>) – Response parameter for barnes interpolation, specified nondimensionally
+<li><strong>gamma</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Adjustable smoothing parameter for the barnes interpolation. Default 0.25.</li>
+<li><strong>kappa_star</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Response parameter for barnes interpolation, specified nondimensionally
 in terms of the Nyquist. Default 5.052</li>
-<li><strong>search_radius</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)"><em>float</em></a>) – A search radius to use for the barnes and cressman interpolation schemes.
+<li><strong>search_radius</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – A search radius to use for the barnes and cressman interpolation schemes.
 If search_radius is not specified, it will default to the average spacing of
 observations.</li>
-<li><strong>rbf_func</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) – Specifies which function to use for Rbf interpolation.
+<li><strong>rbf_func</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Specifies which function to use for Rbf interpolation.
 Options include: ‘multiquadric’, ‘inverse’, ‘gaussian’, ‘linear’, ‘cubic’,
 ‘quintic’, and ‘thin_plate’. Defualt ‘linear’. See scipy.interpolate.Rbf for more
 information.</li>
-<li><strong>rbf_smooth</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.6)"><em>float</em></a>) – Smoothing value applied to rbf interpolation.  Higher values result in more smoothing.</li>
+<li><strong>rbf_smooth</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Smoothing value applied to rbf interpolation.  Higher values result in more smoothing.</li>
 <li><strong>boundary_coords</strong> (<em>dictionary</em>) – Optional dictionary containing coordinates of the study area boundary. Dictionary
 should be in format: {‘west’: west, ‘south’: south, ‘east’: east, ‘north’: north}</li>
 </ul>
@@ -306,7 +306,7 @@ should be in format: {‘west’: west, ‘south’: south, ‘east’: east, �
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, MetPy Developers.
-      Last updated on May 17, 2018 at 19:42:17.
+      Last updated on Jun 29, 2018 at 18:23:29.
 
     </p>
   </div>
@@ -343,7 +343,7 @@ should be in format: {‘west’: west, ‘south’: south, ‘east’: east, �
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.7.0+262.g9879351',
+            VERSION:'0.8.0+13.gdacd80e',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

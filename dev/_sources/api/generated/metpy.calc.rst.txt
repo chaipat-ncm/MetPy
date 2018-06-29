@@ -113,10 +113,15 @@ calc
       total_deformation
       v_vorticity
       vapor_pressure
+      vertical_velocity
+      vertical_velocity_pressure
       virtual_potential_temperature
       virtual_temperature
       vorticity
       wet_bulb_temperature
+      wind_components
+      wind_direction
+      wind_speed
       windchill
    
    
